@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Воспоминания</title>
+    <meta name="title" content="Воспоминания">
+    <meta name="description" content="Здесь вы сможете освежить память о прошедшей ночи.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Воспоминания">
+    <meta property="og:description" content="Здесь вы сможете освежить память о прошедшей ночи.">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Воспоминания">
+    <meta property="twitter:description" content="Здесь вы сможете освежить память о прошедшей ночи.">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<style>
+    @import url('css/style.min.css');
+    @import url('js/script.js');
+
+
+</style>
+
+
+<body>
+
+
+
+
+
+
+
+    <section class="promo">
+        <div class="container">
+
+            <div class="promo__wrapper">
+
+                <div class="record__wrap">
+                    <div class="record__hello">Привет, ....</div>
+
+
+
+
+                    <!-- <div class="promo__wrapper-content"> -->
+
+                    <!-- <div class="change__mode">
+                        <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio"
+                            checked>
+                        <label for="toggle-on" class="btn">Запись</label>
+                        <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+                        <label for="toggle-off" class="btn">Память</label>
+                    </div> -->
+
+
+                    <button class="explore">Explore<span class="icon-right"></span>
+                        <span class="icon-right after"></span>
+                    </button>
+                    <a class="signature" href="#" target="_blank">Made with ♥ by vanderlanth</a>
+
+
+                    <img src="img/write.jpg" alt="writer" class="record__img">
+                </div>
+
+
+                <div class="promo__wrapper-content">
+
+
+
+                    <div class="record__messagebar">
+                        <div class="record__messagebar-title"> записываю с твоих слов...</div>
+
+                        <form class="form-write" action="#">
+
+                            <textarea name="record-input" id="record-input" cols="10" rows="2" required
+                                autocomplete></textarea>
+                            <div class="record__messagebar-subtitle"> Как подчеркнем?</div>
+                            <div class="label__wrap">
+                                <input id="radio-none" class="rbtn-write" name='radio-write' type="radio" value="none"
+                                    checked>
+                                <label class='label__radio' for="radio-none">Никак</label>
+
+                            </div>
+
+                            <div class="label__wrap">
+                                <input id="radio-red" class="rbtn-write" name='myRadio' type="radio" value="red">
+                                <label class='label__radio' for="radio-red">Очень важно</label>
+                            </div>
+
+                            <div class="label__wrap">
+                                <input id="radio-yellow" class="rbtn-write" name='radio-write' type="radio"
+                                    value="yellow">
+                                <label class='label__radio' for="radio-yellow">Не важно, но надо вспомнить</label>
+                            </div>
+
+                            <div class="label__wrap">
+                                <input id="radio-green" class="rbtn-write" name='radio-write' type="radio"
+                                    value="green">
+                                <label class='label__radio' for="radio-green">Новое знакомство</label>
+                            </div>
+
+                            <button class="btn-write">Записать</button>
+
+                        </form>
+                    </div>
+
+
+
+                    <div class="record__tooltip"><b>подсказка: </b><s>в краце опиши своё состояние...</s> добавь
+                        описание того, что происходит вокруг.укажи место, атмосферу.<br> По необходимости, добавь
+                        лейб. если не хочешь, не добавляй его.
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+        // приветствие
+        document.querySelector('.record__hello').innerHTML = `Привет, ${localStorage.name}`;
+
+        document.getElementById('toggle-off').addEventListener('click', () => {
+            window.open('morning.html');
+        });
+</script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
