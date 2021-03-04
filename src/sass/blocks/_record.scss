@@ -213,22 +213,14 @@
 
 @import 'https://fonts.googleapis.com/css?family=Space+Mono';
 
-html, body {
-  width: 100vw;
-  height: 100vh;
-  background: rgb(248, 100, 70);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  overflow:hidden;
-}
 
-button.explore {
+
+button.explore-record {
+    margin: 15px 50px -25px;
   font-family: 'Space Mono', monospace;
   letter-spacing: 1px;
   background: none;
-  color: white;
+  color: black;
   position: relative;
   outline: none;
   border: none;
@@ -245,7 +237,7 @@ button.explore {
     top: 0;
     height: 100%;
     width: 55%;
-    background: #202020;
+    background: rgb(248, 100, 70);
     z-index: -1;
     transition: .3s ease-in all;
   }
@@ -256,7 +248,7 @@ button.explore {
     top: 5%;
     height: 90%;
     width: 5%;
-    background: white;
+    background: rgb(131, 206, 202);
     z-index: -1;
     transition: .4s .02s ease-in all;
   }
@@ -272,15 +264,19 @@ button.explore {
       width: 70%;
     }
     .icon-right.after:after {
+        position: absolute ;
       left: -80px;
-      color: white;
+      bottom: 5px;
+      color: black;
       transition: .2s .2s ease all;
     }
     .icon-right.after:before {
-      left: -104px;
+        position: absolute;
+      left: -150px;
+      bottom: 5px;
       top: 14px;
-      opacity: 0.2;
-      color: white;
+      opacity: 0.9;
+      color: black;
     }
   }
 }
@@ -304,7 +300,7 @@ button.explore {
     transition: .15s .25s ease left, .5s .05s ease color;
   }
   &.after:before {
-    content: 'Explore';
+    content: 'Воспоминания ';
     position: absolute;
     left: -230px;
     top: 14px;
@@ -313,18 +309,3 @@ button.explore {
   }
 }
 
-
-.signature {
-  position: fixed;
-  font-family:  sans-serif;
-  font-weight: 100;
-  bottom: 10px;
-  left: 0;
-  letter-spacing: 4px;
-  font-size: 10px;
-  width: 100vw;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-}

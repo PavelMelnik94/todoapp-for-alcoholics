@@ -149,12 +149,12 @@
 
 
         <div class="promo__wrapper-content">
-          <div class="change__mode">
-            <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio">
-            <label for="toggle-on" class="btn">Запись</label>
-            <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio" checked>
-            <label for="toggle-off" class="btn">Память</label>
-          </div>
+          <a href="writing.html">
+          <button class="explore-morning">Режим<span class="icon-right"></span>
+            <span class="icon-right after"></span>
+        </button>
+
+        <a class="signature" href="morning.html" target="_blank"></a></a>
 
           <img src="img/morning.jpg" alt="morning" class="memory__img">
 
@@ -170,6 +170,14 @@
   </section>
 
 
+  <script>
+    let labels = document.querySelector('.labels');
+    document.querySelector('.label__alert').addEventListener('click', (e) => {
+      e.preventDefault();
+      labels.classList.toggle('hide');
+
+    });
+  </script>
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -129,7 +129,7 @@ $('.content').each( function(i){
     btnStart.addEventListener('click', function (event) {
         event.preventDefault();
 
-
+        console.log('xcxcxz');
         // 1 экран
         //анимация улетания элементов
 
@@ -414,7 +414,6 @@ $('.content').each( function(i){
    
 
 
-
  
     // function hideRecord() {
     //     recordWrap.classList.add('hide');
@@ -496,12 +495,7 @@ $('.content').each( function(i){
 
     //приветствие
     // document.querySelector('.morning__hello').innerHTML = `Привет, ${user.name}`;
-    let hello;
-    hello = document.createElement('div');
-    let name = localStorage.getItem('name');
-    // hello.innerHTML = `Привет, ${name}`;
-    document.querySelector('#morning-hello').textContent = `Привет, ${name}`;
-
+ 
 
 
 
